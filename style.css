@@ -1,0 +1,412 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Poppins');
+
+body {
+    background-color: #F9F9F9;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    line-height: 1.6;
+}
+
+.container {
+    background-color: black;
+    border: 1px solid black;
+    display: grid;
+    grid-gap: 1px;
+    grid-template-columns: .3fr repeat(3, 1fr) .5fr .5fr 1fr;
+    grid-template-rows: repeat(54, 1fr);
+}
+
+.container > div {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+a, .time {
+    color: #762157;
+    font-weight: bold;
+}
+
+h1 {
+    color: #f18b00;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+#sunday, #monday, #tuesday, #wednesday, #thursday {
+    grid-row: 1/2;
+}
+
+#sunday {
+    grid-column: 2/3;
+}
+
+#monday {
+    grid-column: 3/4;
+}
+
+#tuesday {
+    grid-column: 4/5;
+}
+
+#wednesday {
+    grid-column: 5/7;
+}
+
+#thursday {
+    grid-column: 7/8;
+}
+
+#hours {
+    border: 1px solid black;
+    text-align: center;
+}
+
+#seven-am, #eight-am, #nine-am, #ten-am, #eleven-am, #twelve-pm, #one-pm, #two-pm, #three-pm, #four-pm,
+#five-pm, #six-pm, #seven-pm, #eight-pm {
+    grid-column: 1/2;
+}
+
+#seven-am {
+    grid-row: 2/6;
+}
+
+#eight-am {
+    grid-row: 6/10;
+}
+
+#nine-am {
+    grid-row: 10/14;
+}
+
+#ten-am {
+    grid-row: 14/18;
+}
+
+#eleven-am {
+    grid-row: 18/22;
+}
+
+#twelve-pm {
+    grid-row: 22/26;
+}
+
+#one-pm {
+    grid-row: 26/30;
+}
+
+#two-pm {
+    grid-row: 30/34;
+}
+
+#three-pm {
+    grid-row: 34/38;
+}
+
+#four-pm {
+    grid-row: 38/42;
+}
+
+#five-pm {
+    grid-row: 42/46;
+}
+
+#six-pm {
+    grid-row: 46/50;
+}
+
+#seven-pm {
+    grid-row: 50/54;
+}
+
+#eight-pm {
+    grid-row: 54/55;
+}
+
+div .travel-registration {
+    background-color: #FFC99C;
+}
+
+div .customer-centricity {
+    background-color: #CECDCE;
+}
+
+div .brady-summit {
+    background-color: #FBCE60;
+}
+
+div .other {
+    background-color: thistle;
+}
+
+div .breaksnmeals {
+    background-color: #DBF99E;
+}
+
+div .mobile {
+    background-color: #F5D5EA;
+}
+
+div .uc-design {
+    background-color: #DDEBF0;
+}
+
+div .other {
+    background-color: #FAFFB2;
+}
+
+#check-in {
+    grid-row: 14/26;
+    grid-column: 2/3;
+}
+
+#opening-remarks {
+    grid-row: 26/28;
+    grid-column: 2/3;
+}
+
+#strategic-apps {
+    grid-row: 28/34;
+    grid-column: 2/3;
+}
+
+#break-sun {
+    grid-row: 34/36;
+    grid-column: 2/3;
+}
+
+#cc-customer {
+    grid-row: 36/40;
+    grid-column: 2/3;
+}
+
+#cc-messages {
+    grid-row: 40/43;
+    grid-column: 2/3;
+}
+
+#customer-experience {
+    grid-row: 43/45;
+    grid-column: 2/3;
+}
+
+#reg-brady-summit {
+    grid-row: 46/48;
+    grid-column: 2/3;
+}
+
+#brady-summit-sun {
+    grid-row: 48/55;
+    grid-column: 2/3;
+}
+
+#brady-summit-mon1 {
+    grid-row: 6/42;
+    grid-column: 3/4;
+}
+
+#brady-summit-mon2 {
+    grid-row: 46/55;
+    grid-column: 3/4;
+}
+
+#brady-summit-tue {
+    grid-row: 6/42;
+    grid-column: 4/5;
+}
+
+#design-track-event {
+    grid-row: 46/55;
+    grid-column: 4/5;
+}
+
+#breakfast-wed {
+    grid-row: 2/6;
+    grid-column: 5/7;
+}
+
+#mobile-overview {
+    grid-row: 7/9;
+    grid-column: 5/6;
+}
+
+#uc-design-overview {
+    grid-row: 9/11;
+    grid-column: 5/6;
+}
+
+#uc-design-impl-k {
+    grid-row: 11/16;
+    grid-column: 5/6;
+}
+
+#break-wed {
+    grid-row: 16/17;
+    grid-column: 5/6;
+}
+
+#uc-design-nutsnbolts-k {
+    grid-row: 17/24;
+    grid-column: 5/6;
+}
+
+#uc-design-overview2 {
+    grid-row: 9/11;
+    grid-column: 6/7;
+}
+
+#mobile-overview2 {
+    grid-row: 9/11;
+    grid-column: 6/7;
+}
+
+#mobile-ux-l {
+    grid-row: 11/17;
+    grid-column: 6/7;
+}
+
+#break-wed2 {
+    grid-row: 21/22;
+    grid-column: 6/7;
+}
+
+#mobile-app-l {
+    grid-row: 18/23;
+    grid-column: 6/7;
+}
+
+#lunch-wed {
+    grid-row: 23/26;
+    grid-column: 6/7;
+}
+
+#mobile-ux-k {
+    grid-row: 26/32;
+    grid-column: 5/6;
+}
+
+#mobile-app-k {
+    grid-row: 32/38;
+    grid-column: 5/6;
+}
+
+#uc-design-nutsnbolts-l {
+    grid-row: 26/32;
+    grid-column: 6/7;
+}
+
+#uc-design-impl-l {
+    grid-row: 32/38;
+    grid-column: 6/7;
+}
+
+#break-wed3 {
+    grid-row: 38/39;
+    grid-column: 5/7;
+}
+
+#upgrade-info {
+    grid-row: 39/44;
+    grid-column: 5/7;
+}
+
+#cc-intro {
+    grid-row: 44/48;
+    grid-column: 5/7;
+}
+
+#dinner-wed {
+    grid-row: 52/55;
+    grid-column: 5/7;
+}
+
+#breakfast-thu {
+    grid-row: 2/6;
+    grid-column: 7/8;
+}
+
+#cs-breakouts {
+    grid-row: 7/15;
+    grid-column: 7/8;
+}
+
+#break-thu {
+    grid-row: 15/17;
+    grid-column: 7/8;
+}
+
+#cs-breakouts2 {
+    grid-row: 17/25;
+    grid-column: 7/8;
+}
+
+#lunch-thu {
+    grid-row: 25/29;
+    grid-column: 7/8;
+}
+
+#cs-action {
+    grid-row: 29/32;
+    grid-column: 7/8;
+}
+
+#closing {
+    grid-row: 32/33;
+    grid-column: 7/8;
+}
+
+#travel-back {
+    grid-row: 34/55;
+    grid-column: 7/8;
+}
+
+#filling1 {
+    grid-row: 2/6;
+    grid-column: 2/5;
+}
+
+#filling2 {
+    grid-row: 6/9;
+    grid-column: 6/7;
+}
+
+#filling3 {
+    grid-row: 6/7;
+    grid-column: 5/8;
+}
+
+#filling4 {
+    grid-row: 33/34;
+    grid-column: 7/8;
+}
+
+#filling5 {
+    grid-row: 24/26;
+    grid-column: 5/6;
+}
+
+#filling7 {
+    grid-row: 17/18;
+    grid-column: 7/8;
+}
+
+#filling7 {
+    grid-row: 42/46;
+    grid-column: 3/5;
+}
+
+#filling8 {
+    grid-row: 48/52;
+    grid-column: 5/7;
+}
+
+#filling9 {
+    grid-row: 5/14;
+    grid-column: 2/3;
+}
+
+#filling10 {
+    grid-row: 45/46;
+    grid-column: 2/4;
+}

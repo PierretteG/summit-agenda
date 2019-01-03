@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Poppins');
+
+
+body {
+    background-color: #F9F9F9;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    margin: 5vw 20vw;
+}
+
+h1 {
+    font-family: 'Poppins', sans-serif;
+    color: #f18b00;
+}
+
+a, .time {
+    text-decoration: none;
+    color: #762157;
+}
+
+.time {
+    font-weight: bold;
+}
+
+
+#back-button {
+    float: right;
+    margin-top: -2vw;
+    margin-right: -15vw;
+}
+
+.container {
+    background-color: black;
+    border: 1px solid black;
+    display: grid;
+    grid-template-columns: .1fr 1fr;
+    grid-template-rows: repeat(24, .2fr) repeat(28, 1fr);
+    grid-gap: 1px;
+}
+
+.container>div {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container>div:not(.time) {
+    line-height: 1.6;
+
+}
+
+#seven-am,
+#eight-am,
+#nine-am,
+#ten-am,
+#eleven-am,
+#twelve-pm,
+#one-pm,
+#two-pm,
+#three-pm,
+#four-pm,
+#five-pm,
+#six-pm,
+#seven-pm,
+#eight-pm {
+    grid-column: 1/2;
+}
+
+#seven-am {
+    grid-row: 1/5;
+}
+
+#eight-am {
+    grid-row: 5/9;
+}
+
+#nine-am {
+    grid-row: 9/13;
+}
+
+#ten-am {
+    grid-row: 13/17;
+}
+
+#eleven-am {
+    grid-row: 17/21;
+}
+
+#twelve-pm {
+    grid-row: 21/25;
+}
+
+#one-pm {
+    grid-row: 25/29;
+}
+
+#two-pm {
+    grid-row: 29/33;
+}
+
+#three-pm {
+    grid-row: 33/37;
+}
+
+#four-pm {
+    grid-row: 37/41;
+}
+
+#five-pm {
+    grid-row: 41/45;
+}
+
+#six-pm {
+    grid-row: 45/49;
+}
+
+#seven-pm {
+    grid-row: 49/53;
+}
+
+#eight-pm {
+    grid-row: 53/55;
+}
+
+div .travel-registration {
+    background-color: #FFC99C;
+}
+
+div .customer-centricity {
+    background-color: #CECDCE;
+}
+
+div .brady-summit {
+    background-color: #FBCE60;
+}
+
+div .other {
+    background-color: thistle;
+}
+
+div .breaksnmeals {
+    background-color: #DBF99E;
+}
+
+div .other {
+    background-color: #FAFFB2;
+}
+
+#check-in,
+#opening-remarks,
+#strategic-apps,
+#break-sun,
+#cc-customer,
+#cc-messages,
+#customer-experience,
+#reg-brady-summit,
+#brady-summit-sun {
+    grid-column: 2/3;
+}
+
+#check-in {
+    grid-row: 1/25;
+}
+
+#opening-remarks {
+    grid-row: 25/27;
+}
+
+#strategic-apps {
+    grid-row: 27/33;
+}
+
+#break-sun {
+    grid-row: 33/35;
+}
+
+#cc-customer {
+    grid-row: 35/39;
+}
+
+#cc-messages {
+    grid-row: 39/42;
+}
+
+#customer-experience {
+    grid-row: 42/44;
+}
+
+#filling {
+    grid-row: 44/45;
+    background-color: white;
+}
+
+#reg-brady-summit {
+    grid-row: 45/47;
+}
+
+#brady-summit-sun {
+    grid-row: 47/55;
+}

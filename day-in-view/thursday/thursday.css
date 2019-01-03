@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Poppins');
+
+body {
+    background-color: #F9F9F9;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    margin: 5vw 20vw;
+
+}
+
+h1 {
+    color: #f18b00;
+    font-family: 'Poppins', sans-serif;
+}
+
+a, .time {
+    text-decoration: none;
+    color: #762157;
+}
+
+.time {
+    font-weight: bold;
+}
+
+#back-button {
+    float: right;
+    margin-top: -2vw;
+    margin-right: -15vw;
+}
+
+.container {
+    background-color: black;
+    border: 1px solid black;
+    grid-gap: 1px;
+    display: grid;
+    grid-template-columns: .1fr 1fr;
+    grid-template-rows: repeat(32, 1fr) repeat(21, .1fr);
+}
+
+.container > div {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+
+.container > div:not(.time) {
+    line-height: 1.6;   
+}
+
+#seven-am, #eight-am, #nine-am, #ten-am, #eleven-am, #twelve-pm, #one-pm, #two-pm, #three-pm, #four-pm,
+#five-pm, #six-pm, #seven-pm, #eight-pm {
+    grid-column: 1/2;
+}
+
+#seven-am, #breakfast-thu {
+    grid-row: 1/5;
+}
+
+#eight-am {
+    grid-row: 5/9;
+}
+
+#nine-am {
+    grid-row: 9/13;
+}
+
+#ten-am {
+    grid-row: 13/17;
+}
+
+#eleven-am {
+    grid-row: 17/21;
+}
+
+#twelve-pm {
+    grid-row: 21/25;
+}
+
+#one-pm {
+    grid-row: 25/29;
+}
+
+#two-pm {
+    grid-row: 29/33;
+}
+
+#three-pm {
+    grid-row: 33/37;
+}
+
+#four-pm {
+    grid-row: 37/41;
+} 
+
+#five-pm {
+    grid-row: 41/45;
+}
+
+#six-pm {
+    grid-row: 45/49;
+}
+
+#seven-pm {
+    grid-row: 49/53;
+} 
+
+#eight-pm {
+    grid-row: 53/54;
+}
+
+div .travel-registration {
+    background-color: #FFC99C;
+}
+
+div .customer-centricity {
+    background-color: #CECDCE;
+}
+
+div .breaksnmeals {
+    background-color: #DBF99E;
+}
+
+div .other {
+    background-color: #FAFFB2;
+}
+
+#filling1 {
+    grid-row: 5/6;
+}
+
+#cs-breakouts {
+    grid-row: 6/14;
+}
+
+#break-thu {
+    grid-row: 14/16;
+}
+
+#cs-breakouts2 {
+    grid-row: 16/24;
+}
+
+#lunch-thu {
+    grid-row: 24/28;
+}
+
+#cs-action {
+    grid-row: 28/31;
+}
+
+#closing {
+    grid-row: 31/32;
+}
+
+#filling2 {
+    grid-row: 32/33;
+}
+
+#travel-back {
+    grid-row: 33/54;
+}

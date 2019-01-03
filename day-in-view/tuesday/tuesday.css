@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Poppins');
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    margin: 5vw 20vw;
+}
+
+a, .time {
+    text-decoration: none;
+    color: #762157;
+}
+
+.time {
+    font-weight: bold;
+}
+
+h1 {
+    font-family: 'Poppins', sans-serif;
+    color: #f18b00;
+}
+
+#back-button {
+    float: right;
+    margin-top: -2vw;
+    margin-right: -15vw;
+}
+
+.container {
+    background-color: black;
+    border: 1px solid black;
+    display: grid;
+    grid-gap: 1px;
+    grid-template-columns: .1fr 1fr;
+    grid-template-rows: repeat(52, 1fr);
+}
+
+.container > div {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+
+.container > div:not(.time) {
+    line-height: 1.6;   
+}
+
+#seven-am, #eight-am, #nine-am, #ten-am, #eleven-am, #twelve-pm, #one-pm, #two-pm, #three-pm, #four-pm,
+#five-pm, #six-pm, #seven-pm, #eight-pm {
+    grid-column: 1/2;
+}
+
+#seven-am {
+    grid-row: 1/5;
+}
+
+#eight-am {
+    grid-row: 5/9;
+}
+
+#nine-am {
+    grid-row: 9/13;
+}
+
+#ten-am {
+    grid-row: 13/17;
+}
+
+#eleven-am {
+    grid-row: 17/21;
+}
+
+#twelve-pm {
+    grid-row: 21/25;
+}
+
+#one-pm {
+    grid-row: 25/29;
+}
+
+#two-pm {
+    grid-row: 29/33;
+}
+
+#three-pm {
+    grid-row: 33/37;
+}
+
+#four-pm {
+    grid-row: 37/41;
+} 
+
+#five-pm {
+    grid-row: 41/45;
+}
+
+#six-pm {
+    grid-row: 45/49;
+}
+
+#seven-pm {
+    grid-row: 49/53;
+} 
+
+#eight-pm {
+    grid-row: 53/54;
+}
+
+div .brady-summit {
+    background-color: #FBCE60;
+}
+
+div .other {
+    background-color: thistle;
+}
+
+#filling1 {
+    grid-row: 1/5;
+}
+
+#filling2 {
+    grid-row: 41/45;
+}
+
+#brady-summit-tue, #design-track-event {
+    grid-column: 2/3;
+}
+
+#brady-summit-tue {
+    grid-row: 5/41;
+}
+
+#design-track-event {
+    grid-row: 45/54;
+}
+
