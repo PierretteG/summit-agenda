@@ -50,6 +50,11 @@ a, .time {
 
 #seven-am, #eight-am, #nine-am, #ten-am, #eleven-am, #twelve-pm, #one-pm, #two-pm, #three-pm, #four-pm,
 #five-pm, #six-pm, #seven-pm, #eight-pm {
+    float: left;
+}
+
+#seven-am, #eight-am, #nine-am, #ten-am, #eleven-am, #twelve-pm, #one-pm, #two-pm, #three-pm, #four-pm,
+#five-pm, #six-pm, #seven-pm, #eight-pm {
     grid-column: 1/2;
 }
 
