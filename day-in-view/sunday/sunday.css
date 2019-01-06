@@ -22,6 +22,12 @@ a, .time {
     font-weight: bold;
 }
 
+@media screen and (min-width:0\0) {
+    .container>.time {
+        display: none;
+    }
+}
+
 
 #back-button {
     float: right;

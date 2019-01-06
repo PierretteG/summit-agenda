@@ -20,15 +20,14 @@ a,
 }
 
 .time {
-    display: none;
-}
-
-.time:not(*:root) {
-    display: block;
-}
-
-.time {
     font-weight: bold;
+}
+
+
+@media screen and (min-width:0\0) {
+    .container>.time {
+        display: none;
+    }
 }
 
 #back-button {
@@ -37,7 +36,7 @@ a,
     margin-right: -15vw;
 }
 
- .container {
+.container {
     background-color: black;
     border: 1px solid black;
     grid-gap: 1px;
@@ -47,20 +46,33 @@ a,
 }
 
 
-.container > div {
+.container>div {
     background-color: white;
     display: flex;
     align-items: center;
-    justify-content: center; 
+    justify-content: center;
 }
 
 
-#seven-am, #eight-am, #nine-am, #ten-am, #eleven-am, #twelve-pm, #one-pm, #two-pm, #three-pm, #four-pm,
-#five-pm, #six-pm, #seven-pm, #eight-pm {
+#seven-am,
+#eight-am,
+#nine-am,
+#ten-am,
+#eleven-am,
+#twelve-pm,
+#one-pm,
+#two-pm,
+#three-pm,
+#four-pm,
+#five-pm,
+#six-pm,
+#seven-pm,
+#eight-pm {
     grid-column: 1/2;
 }
 
-#seven-am, #breakfast-thu {
+#seven-am,
+#breakfast-thu {
     grid-row: 1/5;
 }
 
@@ -98,7 +110,7 @@ a,
 
 #four-pm {
     grid-row: 37/41;
-} 
+}
 
 #five-pm {
     grid-row: 41/45;
@@ -110,7 +122,7 @@ a,
 
 #seven-pm {
     grid-row: 49/53;
-} 
+}
 
 #eight-pm {
     grid-row: 53/54;
@@ -166,4 +178,4 @@ div .other {
 
 #travel-back {
     grid-row: 33/54;
-} 
+}

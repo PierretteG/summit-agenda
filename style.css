@@ -28,6 +28,12 @@ a, .time {
     font-weight: bold;
 }
 
+@media screen and (min-width:0\0) {
+    .container>.time {
+        display: none;
+    }
+}
+
 h1 {
     color: #f18b00;
     font-family: 'Poppins', sans-serif;

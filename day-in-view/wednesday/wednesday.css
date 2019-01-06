@@ -13,13 +13,20 @@ h1 {
     font-family: 'Poppins', sans-serif;
 }
 
-a, .time {
+a,
+.time {
     text-decoration: none;
     color: #762157;
 }
 
 .time {
     font-weight: bold;
+}
+
+@media screen and (min-width:0\0) {
+    .container>.time {
+        display: none;
+    }
 }
 
 
@@ -38,19 +45,31 @@ a, .time {
     grid-template-rows: repeat(52, 1fr);
 }
 
-.container > div {
+.container>div {
     background-color: white;
     display: flex;
     align-items: center;
-    justify-content: center; 
+    justify-content: center;
 }
 
-.container > div:not(.time) {
-    line-height: 1.6;   
+.container>div:not(.time) {
+    line-height: 1.6;
 }
 
-#seven-am, #eight-am, #nine-am, #ten-am, #eleven-am, #twelve-pm, #one-pm, #two-pm, #three-pm, #four-pm,
-#five-pm, #six-pm, #seven-pm, #eight-pm {
+#seven-am,
+#eight-am,
+#nine-am,
+#ten-am,
+#eleven-am,
+#twelve-pm,
+#one-pm,
+#two-pm,
+#three-pm,
+#four-pm,
+#five-pm,
+#six-pm,
+#seven-pm,
+#eight-pm {
     grid-column: 1/2;
 }
 
@@ -92,7 +111,7 @@ a, .time {
 
 #four-pm {
     grid-row: 37/41;
-} 
+}
 
 #five-pm {
     grid-row: 41/45;
@@ -104,7 +123,7 @@ a, .time {
 
 #seven-pm {
     grid-row: 49/53;
-} 
+}
 
 #eight-pm {
     grid-row: 53/54;
@@ -202,7 +221,7 @@ div .other {
     grid-column: 3/4;
 }
 
-#mobile-app-l{
+#mobile-app-l {
     grid-row: 17/22;
     grid-column: 3/4;
 }
