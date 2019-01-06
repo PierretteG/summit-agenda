@@ -20,6 +20,14 @@ a,
 }
 
 .time {
+    display: none;
+}
+
+.time:not(*:root) {
+    display: block;
+}
+
+.time {
     font-weight: bold;
 }
 
