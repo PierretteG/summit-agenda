@@ -13,7 +13,7 @@ h1 {
     color: #f18b00;
 }
 
-a, .time {
+a, .time, .fa {
     text-decoration: none;
     color: #762157;
 }
@@ -25,6 +25,10 @@ a, .time {
 @media screen and (min-width:0\0) {
     .container>.time {
         display: none;
+    }
+
+    div:not(.container):not(#brady-summit-sun) {
+        border-bottom: .1px solid gray; 
     }
 }
 

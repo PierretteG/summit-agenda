@@ -14,7 +14,7 @@ h1 {
 }
 
 a,
-.time {
+.time, .fa {
     text-decoration: none;
     color: #762157;
 }
@@ -27,6 +27,10 @@ a,
 @media screen and (min-width:0\0) {
     .container>.time {
         display: none;
+    }
+
+    div:not(.container) {
+        border-bottom: .1px solid gray; 
     }
 }
 

@@ -14,7 +14,7 @@ h1 {
 }
 
 a,
-.time {
+.time, .fa {
     text-decoration: none;
     color: #762157;
 }
@@ -26,6 +26,10 @@ a,
 @media screen and (min-width:0\0) {
     .container>.time {
         display: none;
+    }
+
+    div:not(.container):not(#dinner-wed) {
+        border-bottom: .1px solid gray; 
     }
 }
 
@@ -212,12 +216,12 @@ div .other {
 }
 
 #mobile-ux-l {
-    grid-row: 10/15;
+    grid-row: 10/16;
     grid-column: 3/4;
 }
 
 #break-wed2 {
-    grid-row: 15/17;
+    grid-row: 16/17;
     grid-column: 3/4;
 }
 
